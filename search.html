@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Search-SIMS</title>	
+	<meta name="author"content="sagar"/>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+	
+<style type="text/css">
+ 
+
+html{background-image:url("background.jpg");background-repeat:no-repeat;background-attachment:fixed;
+	 }		
+
+header{background:none;}
+
+h1{text-align:left;font-weight:bold;font-family:Pristina; color:red; font-size:25pt;}
+
+h2{text-align:left;font-weight:bold;font-family:Pristina; color:#FFFFFF; font-size:30pt;}
+
+p{text-align:left;font-weight:bold;font-family:arial; color:#FFFFFF; font-size:20pt;}		
+		
+h3{color:#000000; background-color:orange; font-family:arial black; font-size:15px;}
+
+#menu{width:100%; height:50px; margin:0; z-index:99; position:relative; background-color:none; }
+
+.navbar{height:50px; padding:0; margin:0; position:absolute; border-right:none;} 
+
+.navbar li{height:auto; width:150px;float:left;text-align:center;list-style:none;font:normal bold 12px/1.2em Arial,Verdana,Helvetica;padding:0;margin:0;background-color:none;}
+
+.navbar a{padding:18px 0;border-left:none;border-right:none;text-decoration:none;color:#FFFFFF;display:block;font-family:'Comic Sans MS';}
+
+.navbar li:hover, a:hover{background-color:#009999;color:#FFFFFF;}
+
+.navbar li ul{display:none;height:auto;	margin:0;padding:0;}
+
+.navbar li:hover ul{display:block;}
+
+.navbar li ul li{background-color:#5EAE9E;}
+
+.navbar li ul li a{border-left:none;border-right:none;border-top:1px solid #FFFFFF;border-bottom:none;}
+
+.navbar li ul li a:hover{background-color:none;}
+
+a:link{color:white; background:none; text-decoration:none;}
+
+a:hover{color:orange; background:none;text-decoration:underline;}
+
+div.transbox{
+margin:10px;
+background-color:#c6dbf4;
+border:1px solid black;
+opacity:1;
+filter:alpha(opacity=60);
+padding:0px
+}
+
+div.transbox p
+{
+margin:5px;
+padding:5px;
+font:weight:bold;
+color:red;
+}
+
+div .logout{align:right:}
+
+img{
+
+height: 700px;
+width: auto;
+float: center;
+margin-left: 27%;
+filter: brightness(30%);
+z-index: 1;
+position: absolute;}
+
+.front{
+color:red;
+margin-top: 10px;
+}
+
+.front p {
+	margin-top:0px;
+	margin-left: 10px;
+	z-index: 2;
+	position: absolute;
+	font-family: 'Suez One', serif;
+	font-size: 20px;
+	text-align: center;
+
+	
+}
+.front p span {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 100px;
+	text-align: center;
+	margin-left: 50px;
+	position: relative;
+	word-spacing: 5px;
+}
+div.transbox{
+margin:30px;
+background-color:#000000;
+border:1px solid black;
+opacity:0.6;
+filter:alpha(opacity=60);
+padding:5px
+}
+div.transbox p
+{
+margin:10px;
+padding:10px;
+font:weight:bold;
+color:#01a2d7;
+font-size:20px;
+}
+#login{
+	width:400px;
+	margin:0auto;
+	margin-top: 8px;
+	margin-bottom:2%;
+	transition:opacity 1s;
+	-webkit-transition:opacity 1s;
+}
+#triangle{
+	width:0;
+	border-top:12px solid transparent;
+	border-right:12px solid transparent;
+	margin:0 auto;
+}
+#login h1{
+	background:#3399cc;
+	padding:20px 0;
+	font-size:140%;
+	font-weight:300;
+	text-align:center;
+	color:#fff;
+}
+form{
+	background-color:white;
+	background-repeat:no-repeat
+	padding:100% 10%;
+	opacity:0.8;
+	margin=100%;
+}
+
+
+input[type=text], input[type=password], input[type=number] {
+    width:70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit] {
+margin: 5px 5px 5px 5px;
+background-color: coral;
+height: 50px;
+width: 100px; 
+color: red;
+font-weight: bold;
+size: 20px;
+font-family: arial black;
+
+}
+input[type=submit]:hover {
+margin: 5px 5px 5px 5px;
+background-color:none;
+outline: white;
+outline-color: black;
+outline-width: 5px;
+
+}
+button:hover {
+	background:#2288bb;
+}
+button{
+	width:80px;
+	height:40px;
+}
+</style>
+
+
+
+</head>	
+<body>		
+<header>
+
+<h1> Student Information Managment System </h1>
+<div id="menu">
+<ul class="navbar">
+
+	<li><a href="home.html"><strong>HOME</strong></a></li>
+	<li><a href="about.html"><strong>ABOUT</strong></a><li>
+	<li><a href="#"><strong>ACTIVITIES</strong></a>
+	<ul>
+			<li><a href="teacher.html"><strong> Teacher </strong></a></li>
+			<li><a href="student.html"><strong> Student </strong></a></li>
+	</ul>
+	</li>
+	<li><a href="contact.html"><strong>CONTACT</strong></a></li>
+	<li><a href="feedback.html"><strong>FEEDBACK</strong></a></li>
+</ul>
+</div>
+</header>		
+<hr/>
+
+<body>
+<a href="#"> </a>
+
+<table cellspadding="0" width="50%" align=center valign=top > <tr> <th align=left>
+<h1 align=center> Search Student  </h1>
+	<form method="post">
+	<br> <br> 
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	Roll No <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<input type=text placeholder="Roll No" name="rollno" autofocus/> 	<br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	 
+	
+	  <button type="submit" name="search" value="search">  Search </button> <br>  <br>  <br> 
+</form>	        
+</th>
+</tr>
+</table>
+
+<br/><br/><br/><br/>
+
+<hr/>		
+
+<footer> 
+<a href="#top">Back to top</a>
+<p style="text-align: left; font-size:15px; font-family: calibri" > OUR TEAM  <br/>
+ Sagar Ninave  <br/>
+ Ajay Sahu  <br/>		
+ Angad Yadav <br>
+ &copy;Copyright reserved by<font color="red" face="Pristina"> SIMS </font>  </p> 
+</footer>
+
+</body>
+</html>

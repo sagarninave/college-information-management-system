@@ -1,0 +1,293 @@
+﻿<html>
+<head>
+<title>Feedback-SIMS</title>
+	<meta name="author"content="sagar"/>
+	<meta charset="UTF-8"/>
+<style type="text/css">
+html{background-image:url("background.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;}		
+
+
+h1{text-align:left;font-weight:bold;font-family:Pristina; color:red; font-size:25pt; margin-top: 10px;}
+
+#menu{width:100%;
+height:50px;
+margin:0;
+z-index:99;
+position:relative;
+background-color:none;}
+
+.navbar{
+height:50px;
+padding:0;
+margin:0;
+position:absolute;
+border-right:none;
+}
+
+.navbar li{
+height:auto;
+width:150px;
+float:left;
+text-align:center;
+list-style:none;
+font:normal bold 12px/1.2em
+Arial,Verdana,Helvetica;
+padding:0;
+margin:0;
+background-color:none;
+}
+
+
+.navbar a{
+padding:18px 0;
+border-left:none;
+border-right:none;
+text-decoration:none;
+color:#FFFFFF;
+display:block;
+font-family:'Comic Sans MS';
+}
+
+
+.navbar li:hover, a:hover{
+background-color:#009999;
+color:orange;
+}
+
+
+.navbar li ul{
+display:none;
+height:auto;
+margin:0;
+padding:0;
+}.navbar li:hover ul{
+display:block;
+}
+
+
+.navbar li ul li{
+background-color:#5EAE9E;
+}
+.navbar li ul li a{
+border-left:none;
+border-right:none;
+border-top:1px solid #FFFFFF;
+border-bottom:none;
+font-family: arial;
+}
+
+
+.navbar li ul li a:hover{
+background-color:none;
+}
+
+
+.tftextinput{
+margin:0;
+padding:10px 45px;
+font-family:Arial,Helvetica,Sans-serif;
+font-size:14px;
+border:1px double #0076a3;
+border-right:0px;
+border-radius:5px;
+}
+
+
+textarea{
+margin:0;
+padding:10px 40px;
+font-family:Arial, Helvetica, Sans-serif;
+fobt-size:20px;
+font-weight:bold;
+font-style:italic;
+border:1px solid #0076a3;
+border-right:0px;
+border-top-right-radius:20px 20px;
+border-bottom-right-radius:20px 20px;
+border-top-left-radius:20px 20px;
+border-bottom-left-radius:20px 20px;
+}
+
+
+.tfbutton{
+margin:0;
+font-family:Arial,Helvetica,Sans-serif;
+font-size:14px;
+font-weight:bold;
+font-style:italic;
+padding:15px 20px;
+outline:none;
+corsor:pointer;
+text-align:center;
+text-decoration:none;
+color:#FFFFFF;
+background-color:#006633;
+border:solid 1px #0076a3;
+border-right:0px;
+background:-webkit-gradient(linear,left top,left
+bottom from(#00adee),to(#0078a5));
+background:-moz-linear-gradient(top,#00a­
+dee,#0078a5);
+}
+
+
+button:hover{
+text-decoration:none;
+background:#007ead;
+background:-webkit-gradient(linear,left top,left
+bottom,from(#0095cc),to(#00678e));
+background:-moz-linear-gradient(top,#009­
+5cc,#00678e);
+}
+ footer p{
+ 	color-red;
+ 	size: 15px;
+
+ }
+
+
+button:hover {
+	background:#2288bb;
+}
+button{
+	width:80px;
+	height:40px;
+}
+
+legend{
+color:#FFFFFF;
+font-family:Comic Sans MS;
+font-size:40px;
+}
+p{
+color:#FFFFFF;
+font-family:Comic Sans MS;
+font-size:20px;
+}
+footer p{
+ 	color-red;
+ 	font-size: 15px;
+
+ }
+
+input[type=text], input[type=password], input[type=number] {
+    width:70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit] {
+margin: 5px 5px 5px 5px;
+background-color: coral;
+height: 50px;
+width: 100px; 
+color: red;
+font-weight: bold;
+size: 20px;
+font-family: arial black;
+
+}
+div.transbox{
+margin:30px;
+background-color:#000000;
+border:1px solid black;
+opacity:0.6;
+filter:alpha(opacity=60);
+padding:5px
+}
+div.transbox p
+{
+margin:10px;
+padding:10px;
+font:weight:bold;
+color:#01a2d7;
+font-size:20px;
+}
+button:hover {
+	background:#2288bb;
+}
+button{
+	width:80px;
+	height:40px;
+}
+
+</style> 
+
+<head>
+
+<body>
+
+<header>
+
+<h1> Student Information Managment System </h1>
+<div id="menu">
+<ul class="navbar">
+
+	<li><a href="home.html"><strong>HOME</strong></a></li>
+	<li><a href="about.html"><strong>ABOUT</strong></a><li>
+	<li><a href="#"><strong>ACTIVITIES</strong></a>
+	<ul>
+			<li><a href="teacher.html"><strong> Teacher </strong></a></li>
+			<li><a href="student.html"><strong> Student </strong></a></li>
+	</ul>
+	</li>
+	<li><a href="contact.html"><strong>CONTACT</strong></a></li>
+	<li><a href="feedback.html"><strong>FEEDBACK</strong></a></li>
+</ul>
+</div>
+</header>		
+	
+<form action="post">
+ <br/>
+<fieldset>
+<legend> <font color="red" face="Pristina"> Feedback </font></legend>
+<table align=center>
+
+
+<tr>
+<th align=left>
+
+<p>First Name:<p/>
+<input type="text" class="tftextinput" size="60" placeholder="First Name" name="firstname" autofocus>
+<br/>
+
+<p>Last Name:</p>
+<input type="text" class="tftextinput" size="21" placeholder="Last Name" name="lastname" >
+<br/>
+
+<p>Mobile:<p/>
+<input type="text" class="tftextinput" size="21" placeholder="Mobile " name="mobile">
+<br/>
+
+<p>Email:<p/>
+<input type="text" class="tftextinput" size="21" placeholder="E-Mail" name="email">
+<br/>
+
+<p>Comment:</p>
+<textarea rows="8" cols="37" placeholder="Enter your message here..." name="comments">
+
+</textarea>
+<br/><br/>
+<button type="submit" value="comment"> Submit </button> 
+ <br> <br> 
+
+</th>
+</tr>
+</table>
+</fieldset>
+</form>
+
+
+<footer> 
+<p> OUR TEAM  <br/>
+ Sagar Ninave  <br/>
+ Ajay Sahu  <br/>		
+ Angad Yadav </p>		
+<p id="copy"> <small>  &copy;Copyright reserved by<font color="red" face="Pristina"> SIMS </font>  </small>	 </p> 
+</footer>
+
+
+</body>
+</html>
